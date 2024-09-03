@@ -113,7 +113,7 @@ const Xray = () => {
         {/* Main container with relative positioning */}
         <div className={`transition-all duration-500 ${formVisible ? 'w-full' : 'w-0 overflow-hidden'} flex flex-col`}>
           <form className={`relative flex flex-col items-center transition-opacity duration-500 ${formVisible ? 'opacity-100' : 'opacity-0'}`}>
-            <div className="relative w-3/4 h-64 bg-gray-100 border-2 border-black rounded-lg flex items-center justify-center mb-8">
+            <div className="relative w-3/4 h-64 bg-gray-100 border-2 border-black rounded-lg flex items-center justify-center ">
               <input
                 type="file"
                 className="absolute inset-0 opacity-0 cursor-pointer"
