@@ -14,6 +14,7 @@
     "@heroicons/react": "^1.0.6",
     "animate.css": "^4.1.1",
     "axios": "^1.7.4",
+    "proxy": "http://106.201.233.20:8099",
     "classnames": "^2.5.1",
     "fa": "^1.0.1",
     "jszip": "^3.10.1",
