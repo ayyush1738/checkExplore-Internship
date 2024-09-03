@@ -18,7 +18,7 @@ const About = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 2000,
     slidesToShow: 3, // Adjust based on how many slides you want visible at once
     slidesToScroll: 1,
     autoplay: true,
