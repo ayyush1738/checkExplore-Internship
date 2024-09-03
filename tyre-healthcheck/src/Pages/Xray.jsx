@@ -187,10 +187,10 @@ const Xray = () => {
             </div>
             {file && !loading && (
               <div className='flex items-center justify-center gap-6'>
-                <button onClick={handleButtonClick} type="button" className="bg-blue-600 hover:bg-blue-800 text-white font-bold text-lg md:text-xl lg:text-2xl py-3 px-12 rounded-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                <button onClick={handleButtonClick} type="button" className="bg-blue-600 hover:bg-blue-800 text-white font-bold text-md md:text-xl lg:text-2xl py-3 px-12 rounded-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                   Upload Image
                 </button>
-                <button onClick={() => window.location.reload()} type="button" className="bg-blue-600 hover:bg-blue-800 text-white font-bold text-lg md:text-xl lg:text-2xl py-3 px-12 rounded-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                <button onClick={() => window.location.reload()} type="button" className="bg-blue-600 hover:bg-blue-800 text-white font-bold text-md md:text-xl lg:text-2xl py-3 px-12 rounded-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                   New Image
                 </button>
               </div>
