@@ -7,7 +7,7 @@ const BackButton = () => {
     const navigate = useNavigate();
 
     const handleButtonNavigatetoHome = () => {
-      navigate('/App');
+      navigate('/');
     };
 
     return(
