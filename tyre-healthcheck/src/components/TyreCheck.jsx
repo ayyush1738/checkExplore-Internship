@@ -26,7 +26,7 @@ const ButtonComponent = () => {
 
   return (
     <button className={styles.cta} onClick={handleDownload}>
-      <span className={styles.span}>Download Tyre X-Ray Dataset</span>
+      <span className={styles.span}>X-Ray Dataset</span>
       <span className={styles.second}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
