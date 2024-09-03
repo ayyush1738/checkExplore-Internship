@@ -9,9 +9,8 @@ import Xray from './Pages/Xray.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route path='/' element={<App/>} />
+      <Route path='/' element={<App />} />
       <Route path="/Xray" element={<Xray />} />
-      <Route path="/" element={<App />} />
     </Route>
   )
 )
