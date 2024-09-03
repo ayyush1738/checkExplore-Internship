@@ -11,7 +11,6 @@ const router = createBrowserRouter(
     <Route>
       <Route path='/' element={<App/>} />
       <Route path="/Xray" element={<Xray />} />
-      <Route path="/App" element={<App />} />
     </Route>
   )
 )
