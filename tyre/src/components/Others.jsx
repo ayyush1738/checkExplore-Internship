@@ -11,7 +11,7 @@ const OtherServices = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
             <div className="relative z-10 container mx-auto text-center py-8 sm:py-12">
                 <h1 className="text-4xl font-extrabold text-white mb-12 sm:mb-16">Other Solutions</h1>
-                <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+                <div className="flex flex-wrap justify-center gap-6 p-4 sm:gap-8">
                     <div className="transition-transform transform hover:scale-105 hover:shadow-lg bg-white rounded-2xl w-full sm:w-80 md:w-96 bg-cover my-4 shadow-lg border border-gray-200 relative overflow-hidden">
                         <img src={TQR} alt="Tyre Check" className="object-cover rounded-lg mb-4 border border-gray-200" />
                         <h2 className="text-xl sm:text-2xl font-semibold  mb-3 text-gray-800">Tyre Check</h2>

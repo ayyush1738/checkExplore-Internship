@@ -22,8 +22,8 @@ const About = () => {
     slidesToShow: 3, // Adjust based on how many slides you want visible at once
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
-    pauseOnHover: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: false,
     arrows: false, // Remove default arrows
     dotsClass: 'slick-dots custom-dots',
     centerMode: true, // Center the active slide

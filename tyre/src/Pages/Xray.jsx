@@ -7,6 +7,8 @@ import FileUpload from '../components/FileUpload.jsx';
 import FormFields from '../components/FormFields.jsx';
 import ActionButtons from '../components/ActionButtons.jsx';
 import AnalysisOverlay from '../components/AnalysisOverlay.jsx';
+import '../components/CircularBlur.css'; // Import the custom CSS for the blur effect
+
 
 const Xray = () => {
   const [file, setSelectedImage] = useState(null);
@@ -68,10 +70,11 @@ const Xray = () => {
   };
 
   return (
-    <div className="relative bg-lime-200 flex items-center justify-center min-h-screen p-4">
+    <div className="relative bg-gray flex items-center justify-center min-h-screen p-4 bg-gray-900">
       <img className='absolute bottom-0 right-0 p-0 max-h-32 md:max-h-48' src={tire} alt="Tire" />
+      <div className="circular-blur absolute z-0 "></div>
       <BackButton />
-      <div className="relative w-3/4 max-w-4xl bg-white p-12 rounded-lg shadow-lg">
+      <div className="relative w-5/6 max-w-4xl py-12 px-8 rounded-lg">
         <div className={`transition-all duration-500 ${formVisible ? 'opacity-100' : 'opacity-0'} flex flex-col`}>
           <form className={`relative flex flex-col items-center transition-opacity duration-500 ${formVisible ? 'opacity-100' : 'opacity-0'}`}>
             <FileUpload file={file} onFileChange={handleFileChange} />

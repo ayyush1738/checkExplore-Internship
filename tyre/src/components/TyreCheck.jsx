@@ -1,32 +1,40 @@
 import React from 'react';
 import styles from './ButtonComponent.module.css';
+import JSZip from 'jszip';
+import { saveAs } from 'file-saver';
+
+const imageUrls = [
+  '../Dataset/img1.jpg',
+  '../Dataset/img2.jpg',
+  '../Dataset/img3.jpg',
+  '../Dataset/img4.jpg'
+];
 
 
 const ButtonComponent = () => {
-  const handleDownload = () => {
-    // URL to your ZIP file
-    const zipUrl = 'https://drive.google.com/file/d/1ONIjksBVJhTMm8I2CkYQzqc_YXE4-sGI/view?usp=drive_link';
+  const handleDownload = async () => {
+    const zip = new JSZip();
 
-    // Create a temporary link element
-    const link = document.createElement('a');
-    link.href = zipUrl;
+    // Fetch each image and add it to the zip
+    await Promise.all(
+      imageUrls.map(async (url) => {
+        const response = await fetch(url);
+        const blob = await response.blob();
+        const filename = url.substring(url.lastIndexOf('/') + 1);
+        zip.file(filename, blob);
+      })
+    );
 
-    // Set the download attribute with a default name for the ZIP file
-    link.setAttribute('download', 'Refrence_images_old.zip');
-
-    // Append the link to the document body (required for Firefox)
-    document.body.appendChild(link);
-
-    // Programmatically click the link to trigger the download
-    link.click();
-
-    // Clean up and remove the link after triggering the download
-    document.body.removeChild(link);
+    // Generate the zip file
+    zip.generateAsync({ type: 'blob' })
+      .then((content) => {
+        saveAs(content, 'Dataset.zip');
+      });
   };
 
   return (
     <button className={styles.cta} onClick={handleDownload}>
-      <span className={styles.span}>Download Tyre X-Ray Dataset</span>
+      <span className={styles.span}>Dataset</span>
       <span className={styles.second}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

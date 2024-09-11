@@ -11,7 +11,7 @@ function Navbar() {
             <img src={logo} alt="Logo" className="h-10 ml-2 transition-transform transform hover:scale-105" />
           </a>
         </div>
-        <div className='mb-4'>
+        <div className='mb-4 mr-24'>
           <ButtonComponent />
         </div>
       </div>

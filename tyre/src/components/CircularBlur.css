@@ -1,0 +1,8 @@
+.circular-blur {
+    width: 60%; /* Adjust size as needed */
+    height: 90%; /* Adjust size as needed */
+    background-color: rgb(1, 1, 48); /* Blue color */
+    border-radius: 50%; /* Makes the div circular */
+    filter: blur(90px); /* Applies the blur effect */
+  }
+  

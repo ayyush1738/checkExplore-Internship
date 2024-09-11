@@ -13,6 +13,17 @@
     cursor: pointer;
     height: 61px;
   }
+
+  @media screen and (max-width: 768px) {
+    .cta {
+      width: 100px;
+      font-size: 15px;
+      padding: 20px 33px;
+      float: right;
+      margin-left:40px;
+    }
+    
+  }
   
   .cta:focus {
     outline: none;
